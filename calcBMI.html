@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calc BMI</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calcBMI.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="inputTallWeightG">
+            <img src="img/BMICLogo.png" class="BMICLogo" alt="BMICLogo">
+            <div class="tallWeightG">
+                <div class="inputNumber tallG">
+                    <p>身高 cm</p>
+                    <input id="tallNum" type="text" placeholder="請輸入身高">
+                </div>
+                <div class="inputNumber weightG">
+                    <p>體重 kg</p>
+                    <input id="weightNum" type="text" placeholder="請輸入體重">
+                </div>                
+            </div>
+            <button id="calcBtn" class="btnCalcStyle" data-contentafter="">
+                <div id="btnLoop" class="imgLoop" >
+                    <img src="img/icons_loop.png" alt="icons_loop.png">
+                </div>
+                <p id="BMICalcResult">看結果</p>
+                <p>BMI</p>
+            </button>
+        </div>
+    
+        <div class="BMIrecordG">
+            <h2 class="recordTitle">BMI 記錄</h2>
+            <ul id="BMIrecordList" class="BMIrecordList">
+            </ul>
+            <button id="delBMIData">刪除所有記錄</button>
+        </div>
+    
+        <footer>
+            <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/BMICLogo.png" class="BMICLogo" alt="BMICLogo">
+        </footer>
+    </div>
+
+
+    <script src="js/calcBMI.js"></script>
+    
+</body>
+</html>
